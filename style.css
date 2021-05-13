@@ -1,0 +1,49 @@
+
+.list
+{
+    display: flex;
+    background-color: rgb(189, 118, 118);
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    display: none;
+}
+
+@media  screen and (max-width:900px) {
+    .open{
+        margin-left: auto;
+        display:inline-block;
+        height: 30px;
+    
+    }
+    .close{
+        display: block;
+        align-self: flex-end; 
+    }
+    
+    .show{
+        margin: 0px;
+
+        height: 100vh;
+        width: 30%;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0s;
+        background-color: rgb(218, 199, 199);
+        transition: all 2s linear;
+    }
+    .remove{
+        display: none;
+    }
+
+}
